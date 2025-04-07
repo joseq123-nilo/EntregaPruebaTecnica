@@ -179,7 +179,7 @@ lo que puede influir en la distribución de recursos y personal.
 Respuesta: Utilizando la columna `Return_Status`, se contabilizaron los casos donde el valor representa `No Return`, revelando una tasa de no devolución que podría impactar 
 las políticas de garantía o penalización, apenas uno de los clientes no ha cumplido con la devolución
 
-**5. ¿Exisiten outliers entre los datos númericos?
+**5. ¿Exisiten outliers entre los datos númericos?**
 Respuesta: Tras aplicar métodos de detección de valores atípicos (outliers) en las columnas numéricas, se identificó que no existen datos que puedan considerarse fuera del rango esperado. 
 Esto puede interpretarse como una señal de que las variables analizadas tienen poca variabilidad o presentan una distribución uniforme. Este resultado también puede deberse a una limpieza 
 previa de los datos, a una baja dispersión natural en las variables numéricas, o a que el método de detección empleado (como el IQR) no encontró diferencias significativas.
