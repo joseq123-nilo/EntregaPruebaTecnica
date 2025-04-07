@@ -49,41 +49,35 @@ Se ha generado un resumen estadístico descriptivo que incluye la media, desviac
 - `freq`: frecuencia del valor más frecuente.
 
 # VARIABLES NUMERICAS (No se muestran todas las variables del Data Frame)
-+-------+------------+-----------------+-----------------+
-|summary|release_year|rental_duration  |rental_rate      |
-+-------+------------+-----------------+-----------------+
-|count  |16044       |16044            |16044            |
-|mean   |2006.0      |4.935489902767389|2.942630         |
-|stddev |0.0         |1.40168979439409 |1.649677567954177|
-|min    |2006        |3                |0.99             |
-|max    |2006        |7                |4.99             |
-+-------+------------+-----------------+-----------------+
-
+| summary | release_year | rental_duration | rental_rate |
+|---------|--------------|-----------------|-------------|
+| count   | 16044        | 16044           | 16044       |
+| mean    | 2006.0       | 4.935489902767389 | 2.942630  |
+| stddev  | 0.0          | 1.40168979439409  | 1.649677567954177 |
+| min     | 2006         | 3                | 0.99       |
+| max     | 2006         | 7                | 4.99       |
 
 # VARIABLES CATEGORICAS (En la siguiente tabla no se muestran todas las varaibles)
 
-+----------------+-----+------+------------------+-----+
-|         columna|count|unique|               top| freq|
-+----------------+-----+------+------------------+-----+
-|   return_status|16044|     3|          RETURNED|15861|
-|          active|16044|     2|              true|15640|
-|           title|16044|   958|BUCKET BROTHERHOOD|   34|
-|          rating|16044|     5|             PG-13| 3585|
-|special_features|16044|     4|          TRAILERS| 8518|
-+----------------+-----+------+------------------+-----+
+| columna          | count | unique | top                | freq |
+|------------------|-------|--------|---------------------|------|
+| return_status     | 16044 | 3      | RETURNED            | 15861 |
+| active            | 16044 | 2      | true                | 15640 |
+| title             | 16044 | 958    | BUCKET BROTHERHOOD  | 34    |
+| rating            | 16044 | 5      | PG-13               | 3585  |
+| special_features  | 16044 | 4      | TRAILERS            | 8518  |
 
 # DETECTAR OUTLIERS (Q1, Q2 , Q3 , Limite_Inferior, Limite_Superior)
 
-+----------------+-------+-------+-------+---------------+---------------+--------+
-|columna         |Q1     |Q2     |Q3     |Limite_Inferior|Limite_Superior|Outliers|
-+----------------+-------+-------+-------+---------------+---------------+--------+
-|length          |80.0   |112.0  |148.0  |-22.0          |250.0          |0       |
-|num_voted_users |18300.0|38950.0|58300.0|-41700.0       |118300.0       |0       |
-|release_year    |2006.0 |2006.0 |2006.0 |2006.0         |2006.0         |0       |
-|rental_duration |4.0    |5.0    |6.0    |1.0            |9.0            |0       |
-|rental_rate     |0.99   |2.99   |4.99   |-5.01          |10.99          |0       |
-|replacement_cost|14.99  |19.99  |24.99  |-0.01          |39.99          |0       |
-+----------------+-------+-------+-------+---------------+---------------+--------+
+| columna          | Q1     | Q2     | Q3     | Limite_Inferior | Limite_Superior | Outliers |
+|------------------|--------|--------|--------|------------------|------------------|----------|
+| length           | 80.0   | 112.0  | 148.0  | -22.0            | 250.0            | 0        |
+| num_voted_users  | 18300.0| 38950.0| 58300.0| -41700.0         | 118300.0         | 0        |
+| release_year     | 2006.0 | 2006.0 | 2006.0 | 2006.0           | 2006.0           | 0        |
+| rental_duration  | 4.0    | 5.0    | 6.0    | 1.0              | 9.0              | 0        |
+| rental_rate      | 0.99   | 2.99   | 4.99   | -5.01            | 10.99            | 0        |
+| replacement_cost | 14.99  | 19.99  | 24.99  | -0.01            | 39.99            | 0        |
+
 
 Adicionalmente, se analizan patrones como:
 
@@ -94,81 +88,73 @@ Tiendas: 2
 Alquileres: 16044
 
 Cantidad de clientes activos vs. inactivos:
-+------+-----+
-|active|count|
-+------+-----+
-|  true|15640|
-| false|  404|
-+------+-----+
+
+| active | count |
+|--------|-------|
+| true   | 15640 |
+| false  | 404   |
 
 Número de películas distintas disponibles por tienda:
-+--------------+-----+
-|store_id_store|count|
-+--------------+-----+
-|             1|  957|
-|             2|  958|
-+--------------+-----+
+
+| store_id_store | count |
+|----------------|--------|
+| 1              | 957    |
+| 2              | 958    |
 
 Top 10 clientes con más alquileres:
-+-----------+-----+
-|customer_id|count|
-+-----------+-----+
-|        148|   46|
-|        526|   45|
-|        236|   42|
-|        144|   42|
-|         75|   41|
-|        197|   40|
-|        469|   40|
-|        178|   39|
-|        137|   39|
-|        468|   39|
-+-----------+-----+
+
+| customer_id | count |
+|-------------|--------|
+| 148         | 46     |
+| 526         | 45     |
+| 236         | 42     |
+| 144         | 42     |
+| 75          | 41     |
+| 197         | 40     |
+| 469         | 40     |
+| 178         | 39     |
+| 137         | 39     |
+| 468         | 39     |
 
 Cantidad de alquileres por tienda:
-+--------------+-----+
-|store_id_store|count|
-+--------------+-----+
-|             1| 8747|
-|             2| 7297|
-+--------------+-----+
+
+| store_id_store | count |
+|----------------|--------|
+| 1              | 8747   |
+| 2              | 7297   |
 
 Películas con mayor número de alquileres:
-+-------------------+-----+
-|              title|count|
-+-------------------+-----+
-| BUCKET BROTHERHOOD|   34|
-|   ROCKETEER MOTHER|   33|
-|     GRIT CLOCKWORK|   32|
-|RIDGEMONT SUBMARINE|   32|
-|      SCALAWAG DUCK|   32|
-|     JUGGLER HARDLY|   32|
-|     FORWARD TEMPLE|   32|
-|     TIMBERLAND SKY|   31|
-|  GOODFELLAS SALUTE|   31|
-|       NETWORK PEAK|   31|
-+-------------------+-----+
+
+| title               | count |
+|---------------------|--------|
+| BUCKET BROTHERHOOD  | 34     |
+| ROCKETEER MOTHER    | 33     |
+| GRIT CLOCKWORK      | 32     |
+| RIDGEMONT SUBMARINE | 32     |
+| SCALAWAG DUCK       | 32     |
+| JUGGLER HARDLY      | 32     |
+| FORWARD TEMPLE      | 32     |
+| TIMBERLAND SKY      | 31     |
+| GOODFELLAS SALUTE   | 31     |
+| NETWORK PEAK        | 31     |
 
 Promedio de alquileres por cliente:
-+------------------+
-|       avg_rentals|
-+------------------+
-|26.784641068447414|
-+------------------+
+
+| avg_rentals        |
+|--------------------|
+| 26.784641068447414 |
 
 Total de clientes con películas no devueltas: 1
-+-----------+
-|customer_id|
-+-----------+
-|        554|
-+-----------+
+
+| customer_id |
+|-------------|
+| 554         |
 
 Duración promedio de los alquileres en días:
-+-----------------+
-|    promedio_dias|
-+-----------------+
-|5.025219090851775|
-+-----------------+
+
+| promedio_dias      |
+|--------------------|
+| 5.025219090851775  |
 
 Ingreso potencial perdido por películas con estado LOST:
 Perdidas por peliculas no devueltas: $0.99
