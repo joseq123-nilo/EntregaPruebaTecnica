@@ -2,7 +2,7 @@
 # Pipeline ETL con PySpark – Tienda de Alquiler de Películas 
 Realizado por: Jose Manuel Quinchia Escobar. CC 1035236094
 
-Este proyecto implementa un pipeline ETL usando **PySpark** para limpiar, transformar y analizar datos de una tienda de alquiler de películas. La información procesada incluye datos de películas, inventario,alquileres, clientes, y tiendas.
+Este proyecto implementa un pipeline ETL usando **PySpark** para limpiar, transformar y analizar datos de una tienda de alquiler de películas. La información procesada incluye datos de películas, inventario, alquileres, clientes, y tiendas.
 
 ## Descripción General del Proceso
 
