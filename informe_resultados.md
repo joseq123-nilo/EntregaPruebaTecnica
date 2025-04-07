@@ -42,24 +42,25 @@ A continuación se describen los componentes principales:
 
 ## 2. Análisis Exploratorio de Datos
 
-Se realiza un resumen estadístico descriptivo media, desviación estandar, minimos, maximos, Q1,Mediana,Q2 y  para cada columna relevante del DataFrame `df_analitico_final`, incluyendo:
+Se ha generado un resumen estadístico descriptivo que incluye la media, desviación estándar, mínimos, máximos, Q1 (primer cuartil), mediana (Q2) y Q3 (tercer cuartil) para cada una de las columnas relevantes del DataFrame df_analitico_final, incluyendo:
 - `count`: número de valores no nulos.
 - `unique`: número de valores únicos.
 - `top`: valor más frecuente.
 - `freq`: frecuencia del valor más frecuente.
 
-# VARIABLES NUMERICAS
+# VARIABLES NUMERICAS (No se muestran todas las variables del Data Frame)
++-------+------------+-----------------+-----------------+
+|summary|release_year|rental_duration  |rental_rate      |
++-------+------------+-----------------+-----------------+
+|count  |16044       |16044            |16044            |
+|mean   |2006.0      |4.935489902767389|2.942630         |
+|stddev |0.0         |1.40168979439409 |1.649677567954177|
+|min    |2006        |3                |0.99             |
+|max    |2006        |7                |4.99             |
++-------+------------+-----------------+-----------------+
 
-summary|film_id           |inventory_id      |customer_id       |rental_id        |staff_id          |customer_store_id  |address_id_customer|store_id_store     |manager_staff_id   |address_id_store   |store_id_inventory  |release_year|language_id|rental_duration  |rental_rate      |length            |replacement_cost |num_voted_users   |
-+-------+------------------+------------------+------------------+-----------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+--------------------+------------+-----------+-----------------+-----------------+------------------+-----------------+------------------+
-|count  |16044             |16044             |16044             |16044            |16044             |16044              |16044              |16044              |16044              |16044              |16044               |16044       |16044      |16044            |16044            |16044             |16044            |16044             |
-|mean   |501.10888805784094|2291.8425579655946|297.14316878583895|8025.371478434306|1.49887808526552  |1.4548117676389927 |301.8585140862628  |1.4548117676389927 |1.4548117676389927 |1.4548117676389927 |1.9992520568436798  |2006.0      |1.0        |4.935489902767389|2.942630         |114.97107953128895|20.215462        |39301.98828222389 |
-|stddev |288.51352853443257|1322.2106432491476|172.45313648154487|4632.777248876796|0.5000143241440549|0.49796935597986214|173.08537080130517 |0.49796935597986214|0.49796935597986214|0.49796935597986214|0.027339171963283424|0.0         |0.0        |1.40168979439409 |1.649677567954177|40.102347231803414|6.081773871681717|22485.385207691626|
-|min    |1                 |1                 |1                 |1                |1                 |1                  |5                  |1                  |1                  |1                  |1                   |2006        |1          |3                |0.99             |46                |9.99             |0                 |
-|max    |1000              |4581              |599               |16049            |2                 |2                  |605                |2                  |2                  |2                  |2                   |2006        |1          |7                |4.99             |185               |29.99            |76900             |
-+-------+------------------+------------------+------------------+-----------------+------------------+-------------------+-------------------+-------------------+-------------------+-------------------+--------------------+------------+-----------+-----------------+-----------------+------------------+-----------------+------------------+
 
-# VARIABLES CATEGORICAS
+# VARIABLES CATEGORICAS (En la siguiente tabla no se muestran todas las varaibles)
 
 +----------------+-----+------+------------------+-----+
 |         columna|count|unique|               top| freq|
